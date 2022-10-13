@@ -9,11 +9,8 @@
 void print_all(const char * const format, ...)
 {
 	va_list valist;
-
 	unsigned int i = 0, j, c = 0;
-
 	char *str;
-
 	const char t_arg[] = "cifs";/*char, int, float, string*/
 
 	va_start(valist, format);
@@ -24,8 +21,8 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == t_arg[j] && c)
 			{
-				printf(", ");
-				break;
+			printf(", ");
+			break;
 			} j++;
 		}
 	switch (format[i])
